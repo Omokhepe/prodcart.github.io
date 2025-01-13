@@ -1,0 +1,108 @@
+@import '../styles/design';
+
+.cardMain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  width: 50%;
+}
+
+.dessertDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.dessertDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.flex-item {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.dessertImg {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.addButton {
+  position: relative;
+  bottom: 20px;
+  //left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid $Red;
+}
+
+.cartBtn {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  @include text-preset-4-Bold;
+  color: $Rose900;
+  img {
+    width: 16px;
+    margin-right: 5px;
+  }
+}
+
+.dessertDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.dessertTitle {
+  @include text-preset-4;
+  color: $Rose500;
+}
+
+.dessertDesc {
+  @include text-preset-3;
+  color: $Rose900;
+}
+.dessertAmt {
+  @include text-preset-3;
+  color: $Red;
+}
+
+.productBtn {
+  background: $Red;
+}
+.incrementBtn {
+  display: flex;
+  align-items: center;
+}
+.buttonVol {
+  border-radius: 50%;
+  border: 1px solid $Rose50;
+  width: 7px;
+  padding: 4px;
+}
+.decreaseBTN {
+  padding: 7px 4px;
+}

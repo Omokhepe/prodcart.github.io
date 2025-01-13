@@ -1,0 +1,43 @@
+@import '../styles/design';
+//
+.global{
+  //--st-modal-backgroundColor: #000000;
+  //
+  //.Modal-module_modalBody__3_RoW {
+  //  position: relative;
+  //  max-height: var(--st-dialog-maxContentHeight);
+  //  overflow-y: hidden;
+  //}
+
+  .Modal-module_dialog {
+    width: 250px;
+    max-width: 350px;
+  }
+}
+//Html[class]"Modal-module_modal__FqeFw Modal-module_dialog__2UBIn  "
+.Modal-module_dialog {
+  background-color: red;
+  width: 50%;
+  max-width: 350px;
+}
+//--st-modal-backgroundColor: #ffffff;
+
+.modalDIV {
+  //background-color: red;
+  padding: 35px;
+  overflow-y: hidden;
+}
+.modalListItem {
+  background-color: $Rose50;
+}
+.modalImg{
+  width: 30px;
+}
+
+.modalItems{
+display: flex;
+align-items: center;
+}
+.modalConfirmBtn{
+  @include confirmBtn;
+}

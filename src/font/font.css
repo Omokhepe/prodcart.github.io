@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'RedHatBold';
+  src:
+    local('RedHatTextBold'),
+    url('RedHatText-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RedHatRegular';
+  src:
+    local('RedHatTextRegular'),
+    url('RedHatText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'RedHatSemibold';
+  src:
+    local('RedHatTextSemiBold'),
+    url('RedHatText-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
