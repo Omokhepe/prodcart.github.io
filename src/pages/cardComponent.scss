@@ -1,4 +1,4 @@
-@import '../styles/design';
+@use '../styles/design';
 
 .cardMain {
   display: flex;
@@ -55,7 +55,7 @@
   width: 120px;
   height: 35px;
   border-radius: 20px;
-  border: 1px solid $Red;
+  border: 1px solid design.$Red;
 }
 
 .cartBtn {
@@ -63,8 +63,8 @@
   align-items: center;
   background: transparent;
   border: none;
-  @include text-preset-4-Bold;
-  color: $Rose900;
+  @include design.text-preset-4-Bold;
+  color: design.$Rose900;
   img {
     width: 16px;
     margin-right: 5px;
@@ -77,21 +77,21 @@
 }
 
 .dessertTitle {
-  @include text-preset-4;
-  color: $Rose500;
+  @include design.text-preset-4;
+  color: design.$Rose500;
 }
 
 .dessertDesc {
-  @include text-preset-3;
-  color: $Rose900;
+  @include design.text-preset-3;
+  color: design.$Rose900;
 }
 .dessertAmt {
-  @include text-preset-3;
-  color: $Red;
+  @include design.text-preset-3;
+  color: design.$Red;
 }
 
 .productBtn {
-  background: $Red;
+  background: design.$Red;
 }
 .incrementBtn {
   display: flex;
@@ -99,7 +99,7 @@
 }
 .buttonVol {
   border-radius: 50%;
-  border: 1px solid $Rose50;
+  border: 1px solid design.$Rose50;
   width: 7px;
   padding: 4px;
 }

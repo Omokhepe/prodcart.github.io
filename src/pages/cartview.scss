@@ -1,4 +1,4 @@
-@import '../styles/design';
+@use '../styles/design';
 
 .cartMain {
   //background-color: $Rose100;
@@ -7,15 +7,15 @@
 
   .cartInner {
     min-height: 250px;
-    background-color: $white;
+    background-color: design.$white;
     padding: 20px;
     border-radius: 12px;
   }
 }
 
 .cartTitle {
-  @include text-preset-2;
-  color: $Red;
+  @include design.text-preset-2;
+  color: design.$Red;
   margin-top: 0;
 }
 
@@ -30,30 +30,30 @@ ul {
 }
 
 .cartName {
-  @include text-preset-4-Bold;
-  color: $Rose900;
+  @include design.text-preset-4-Bold;
+  color: design.$Rose900;
   font-weight: 600;
 }
 
 .cartQty {
-  @include text-preset-4-Bold;
-  color: $Red;
+  @include design.text-preset-4-Bold;
+  color: design.$Red;
   font-weight: 600;
 }
 .cartPrice {
-  @include text-preset-4;
-  color: $Rose500;
+  @include design.text-preset-4;
+  color: design.$Rose500;
   font-weight: 400;
   margin: 0 21px;
 }
 .cartDesc {
-  @include text-preset-4-Bold;
-  color: $Rose500;
+  @include design.text-preset-4-Bold;
+  color: design.$Rose500;
   font-weight: 600;
 }
 .cartDeleteItem {
   border-radius: 50px;
-  border: 1px solid $Rose400;
+  border: 1px solid design.$Rose400;
   width: 12px;
   padding: 5px;
 }
@@ -61,26 +61,26 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: $Rose900;
+  color: design.$Rose900;
   span {
-    @include text-preset-4;
+    @include design.text-preset-4;
   }
   h3 {
-    @include text-preset-2;
+    @include design.text-preset-2;
   }
 }
 .emptyCart {
   margin: 20px 75px;
-  @include text-preset-4-Bold;
-  color: $Rose500;
+  @include design.text-preset-4-Bold;
+  color: design.$Rose500;
 }
 .cartNeutralTxt{
-  background-color: $Rose50;
+  background-color: design.$Rose50;
   padding: 25px;
   margin: 15px 0;
-  @include text-preset-4-Bold;
-  color: $Rose900;
+  @include design.text-preset-4-Bold;
+  color: design.$Rose900;
 }
 .cartConfirmBtn{
-  @include confirmBtn;
+  @include design.confirmBtn;
 }

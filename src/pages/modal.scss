@@ -1,4 +1,4 @@
-@import '../styles/design';
+@use '../styles/design';
 //
 .global{
   //--st-modal-backgroundColor: #000000;
@@ -28,7 +28,7 @@
   overflow-y: hidden;
 }
 .modalListItem {
-  background-color: $Rose50;
+  background-color: design.$Rose50;
 }
 .modalImg{
   width: 30px;
@@ -39,5 +39,5 @@ display: flex;
 align-items: center;
 }
 .modalConfirmBtn{
-  @include confirmBtn;
+  @include design.confirmBtn();
 }
